@@ -16,13 +16,17 @@
       <ErrorMessage name="email" class="text-red-600 hover:text-red-700" />
     </div>
 
-    <div class="text-center lg:text-left">
+    <div class="text-center lg:text-left mb-6">
       <button
         type="submit"
         class="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
       >
         Submit
       </button>
+    </div>
+
+    <div @click="emit('login')" class="cursor-pointer">
+      Back to <span class="text-red-600">Login</span>
     </div>
   </Form>
 </template>
