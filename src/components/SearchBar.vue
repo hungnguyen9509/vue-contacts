@@ -2,6 +2,7 @@
   <form @submit.prevent="handleSearch" class="w-[90%] sm:w-[70%]">
     <div class="relative">
       <input
+        data-cy="search-bar"
         type="text"
         placeholder="Search"
         class="border py-2 px-10 focus:outline-none rounded-md focus:bg-slate-100 h-full w-full"

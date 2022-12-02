@@ -3,9 +3,10 @@
     <ul
       class="flex flex-col gap-2 mx-auto w-[90%] sm:w-[70%] max-h-[calc(100vh-180px)] overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-green-900 scrollbar-track-transparent"
     >
-      <template v-for="contact in filteredContacts" :key="contact.id">
+      <template v-for="(contact, idx) in filteredContacts" :key="contact.id">
         <ContactItem
           :contact="contact"
+          :idx="idx"
           @delete="showConfirmModal"
           @edit="goToContactEdit"
           @view-detail="goToContactDetails"

@@ -49,6 +49,7 @@
         </div>
         <div class="flex items-center gap-5">
           <ButtonUI
+            id="save"
             type="submit"
             class="hidden sm:inline-block"
             :class="{

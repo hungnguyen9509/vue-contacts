@@ -2,6 +2,7 @@
   <DropdownMenu :menuItems="menuItems">
     <template v-slot:button>
       <button
+        data-cy="avatar"
         data-bs-toggle="dropdown"
         class="w-10 h-10 text-white bg-blue-500 rounded-full flex justify-center items-center cursor-pointer"
       >

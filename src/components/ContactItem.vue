@@ -1,7 +1,7 @@
 <template>
   <li
     class="flex items-center border rounded-md py-8 px-4 cursor-pointer hover:bg-slate-100 transition-[background]"
-    :data-cy="'ContactItem-' + contact.id"
+    :data-cy="'ContactItem-' + idx"
     @click="$emit('viewDetail', contact.id)"
   >
     <div class="w-20 h-20 border border-slate-500 rounded-full">
@@ -67,5 +67,5 @@
 import type { Contact } from "@/models/Contact";
 
 defineEmits(["delete", "edit", "view-detail"]);
-defineProps<{ contact: Contact }>();
+defineProps<{ contact: Contact; idx: number }>();
 </script>

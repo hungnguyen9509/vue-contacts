@@ -64,7 +64,6 @@ export const getContacts = async () => {
       email: data.email,
       phone: data.phone,
       birthday: data.birthday,
-      userId: data.userId,
     };
     return contact;
   });
@@ -83,7 +82,6 @@ export const getContact = async (id: string) => {
       email: data.email,
       phone: data.phone,
       birthday: data.birthday,
-      userId: data.userId,
     };
     return contact;
   }

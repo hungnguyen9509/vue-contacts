@@ -3,7 +3,7 @@
     <section class="flex flex-col items-center gap-5">
       <SearchBar class="flex-shrink" />
       <section class="w-[90%] sm:w-[70%]">
-        <ButtonUI @click="navigationToCreateContact">
+        <ButtonUI @click="navigationToCreateContact" data-cy="create-contact">
           <div class="flex gap-1 items-center">
             <v-icon name="md-addcircleoutline-outlined"></v-icon
             ><span>Create Contact</span>
